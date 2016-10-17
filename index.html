@@ -51,27 +51,24 @@
     </div>
     <div id="locationField">
       <input id="autocomplete" placeholder="Enter your address"
-             onFocus="geolocate()" type="text" ></input>
+             onFocus="geolocate()" type="text" >
     </div>
 
     <div id="locationField">
       <input id="autocomplete2" placeholder="Enter your address"
-             onFocus="geolocate()" type="text"></input>
+             onFocus="geolocate()" type="text">
     </div>
 
     <div>
       <button id="goTime" type="button" onclick="transition()">Find Midpoint</button>
     </div>
-    <p id="lat1" style="display: none"></p>
-    <p id="lon1" style="display: none"></p>
-    <p id="lat2" style="display: none"></p>
-    <p id="lon2" style="display: none"></p>
     <script src="js/geocoder.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVLrwa5Xh3KV1I43rvDNNfT04kmEaNG6Q&libraries=places&callback=initAutocomplete"
         async defer></script>
+    <footer>
+      <p><a href="https://acdyer.com">Andrew Dyer</a> & <a href="http://timboex.com/">Tim Boex</a></p>
+      <p>Created for Comp 424 at Loyola Chicago</p>
+    </footer>
   </body>
-  <footer>
-  <p><a href="acdyer.com">Andrew Dyer</a> & <a href="http://timboex.com/">Tim Boex</a></p>
-  <p>Created for Comp 424 at Loyola Chicago</p>
-  </footer>
+
 </html>

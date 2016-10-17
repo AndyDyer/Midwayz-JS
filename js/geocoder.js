@@ -46,8 +46,8 @@ function HTMLRequest(address, count){
     var results = geoData["results"]; // create variable for results
     var userLong = results[0]["geometry"]["location"]["lng"]; // parse the latitude
     var userLat = results[0]["geometry"]["location"]["lat"]; // parse the longitude
-    document.getElementById(tempLon).innerHTML = userLong
-    document.getElementById(tempLat).innerHTML = userLat
+    console.log(userLong)
+    console.log(userLat)
   }
   geocode.send();
 }
@@ -93,11 +93,5 @@ function transition(){
 
     temp = document.getElementById('autocomplete2').value;
     HTMLRequest(temp, 2);
-    console.log(document.getElementById('lat1').innerHTML)
-    var lat1 = document.getElementById('lat1').value;
-    var lat2 = document.getElementById('lat2').value;
-    var lon1=  document.getElementById('lon1').value;
-    var lon2=  document.getElementById('lon2').value;
-    console.log(document.getElementById('lat1').inneHTML)
   }
 }
