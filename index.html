@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Midwayz</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      body {
+        margin:0px;
+        /* Location of the image */
+        background-image: url(img/editedTraffic.jpg);
+
+        /* Background image is centered vertically and horizontally at all times */
+        background-position: center center;
+
+        /* Background image doesn't tile */
+        background-repeat: no-repeat;
+
+        /* Background image is fixed in the viewport so that it doesn't move when
+        the content's height is greater than the image's height */
+        background-attachment: fixed;
+
+        /* This is what makes the background image rescale based
+        on the container's size */
+        background-size: cover;
+
+        /* Set a background color that will be displayed
+        while the background image is loading */
+        background-color: #464646;
+      }
+    </style>
+    <link href="js/geocoder.js">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/geocoder.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre|Lato" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="top-right" style="margin-top:0px;">
+      <ul>
+        <li style="float:left; padding-left: 25px; display: inline-block"> <img src="img/smalllogo.png"></li>
+
+        <li><a class="pagenav" href="help.html">Help</a></li>
+        <li><a class="pagenav" href="about.html">About</a></li>
+      </ul>
+    </div>
+    <div id = "TagLine">
+        <p>"Simply input two addresses and MidWayz will find the midpoint between the two."</p>
+    </div>
+    <div id="locationField">
+      <input id="autocomplete" placeholder="Enter your address"
+             onFocus="geolocate()" type="text" ></input>
+    </div>
+
+    <div id="locationField">
+      <input id="autocomplete2" placeholder="Enter your address"
+             onFocus="geolocate()" type="text"></input>
+    </div>
+
+    <div>
+      <button id="goTime" type="button" onclick="transition()">Find Midpoint</button>
+    </div>
+    <p id="lat1" style="display: none"></p>
+    <p id="lon1" style="display: none"></p>
+    <p id="lat2" style="display: none"></p>
+    <p id="lon2" style="display: none"></p>
+    <script src="js/geocoder.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVLrwa5Xh3KV1I43rvDNNfT04kmEaNG6Q&libraries=places&callback=initAutocomplete"
+        async defer></script>
+  </body>
+  <footer>
+  <p><a href="acdyer.com">Andrew Dyer</a> & <a href="http://timboex.com/">Tim Boex</a></p>
+  <p>Created for Comp 424 at Loyola Chicago</p>
+  </footer>
+</html>

@@ -1,0 +1,76 @@
+#locationField, #controls{
+  position: relative;
+  width: 480px;
+}
+p{
+  text-align: center;
+  display: block;
+  font-family: 'Abhaya Libre', serif;
+}
+h1{
+  text-align: center;
+  display: block;
+  font-family: 'Abhaya Libre', serif;
+  font-size:150%
+}
+#autocomplete {
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+  width: 99%;
+  input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+}
+#autocomplete2 {
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+  width: 99%;
+  input[type=text]:focus {
+    border: 3px solid #555;
+}
+}
+.label {
+  text-align: right;
+  font-weight: bold;
+  width: 100px;
+  color: #303030;
+}
+#address {
+  border: 1px solid #000090;
+  background-color: #f0f0ff;
+  width: 480px;
+  padding-right: 2px;
+}
+#address td {
+  font-size: 10pt;
+}
+.field {
+  width: 99%;
+}
+.slimField {
+  width: 80px;
+}
+.wideField {
+  width: 200px;
+}
+#locationField {
+  height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#goTime {
+  font-family: 'Lato', sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #4cc6d4;
+  text-decoration: none;
+  border: none;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 4px;
+}

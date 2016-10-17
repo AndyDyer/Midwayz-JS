@@ -1,0 +1,57 @@
+
+.top-right ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  margin-bottom: 150px
+}
+.top-right li {
+  float:right;
+}
+a:link {
+    text-decoration: none;
+    color:currentColor;
+}
+
+a:visited {
+    text-decoration: none;
+    color:currentColor;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.top-right li a {
+  font-family: 'Abhaya Libre', serif;
+  align-content: center;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: #4cc6d4;
+}
+.top-right li a:hover:not(.active) {
+    background-color: #111;
+}
+footer {
+    background-color: #4cc6d4;
+    position: absolute;
+    font-family: 'Abhaya Libre', serif;
+    color: white;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow:hidden;
+    z-index: 3;
+}
