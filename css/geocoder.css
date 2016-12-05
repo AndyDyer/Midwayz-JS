@@ -1,34 +1,16 @@
-#locationField, #controls{
+.locationField, #controls{
   position: relative;
   width: 480px;
 }
-p{
-  text-align: center;
-  display: block;
-  font-family: 'Abhaya Libre', serif;
-}
-h1{
-  text-align: center;
-  display: block;
-  font-family: 'Abhaya Libre', serif;
-  font-size:150%
-}
 #autocomplete {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   position: absolute;
   width: 99%;
-  input[type=text]:focus {
-    border: 3px solid #555;
-}
-
 }
 #autocomplete2 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   position: absolute;
   width: 99%;
-  input[type=text]:focus {
-    border: 3px solid #555;
-}
 }
 .label {
   text-align: right;
@@ -54,7 +36,7 @@ h1{
 .wideField {
   width: 200px;
 }
-#locationField {
+.locationField {
   height: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -67,7 +49,8 @@ h1{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: #4cc6d4;
+  background-color: grey;
+  color: white;
   text-decoration: none;
   border: none;
   font-size: 20px;

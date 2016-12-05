@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Midwayz</title>
+    <title>Midwayz - Help</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <style>
@@ -33,42 +33,36 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/geocoder.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre|Lato" rel="stylesheet">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-
   </head>
 
   <body>
 
     <div class="top-right" style="margin-top:0px;">
-      <ul style="padding-bottom: 0px">
+      <ul>
         <li style="float:left; display: inline-block" > <a href="index.html" style= "padding-bottom: 0px"><img src="img/smalllogo.png" style="padding-left:25px"></a></li>
         <li><a class="pagenav" href="help.html" style="padding-top: 28px; padding-bottom: 28px">Help</a></li>
-
+        
       </ul>
     </div>
-    <div id="textText">
-    <h1 id="tempText" style="font-family: 'Open Sans', sans-serif; margin: auto; text-align: center; padding-top: 20px; ">Enter Two Addresses</h1>
-  </div>
-    <div class="locationField" id="enter">
-      <input id="autocomplete" placeholder="Enter your address"
-             onFocus="geolocate()" type="text" onchange="changeButton()"></input>
+
+    <div class = "Text" style="margin-top: 15px">
+      <h1>Locate</h1>
+      <p>Simply enter two locations and MidWayz finds the midpoint taking into account the middle of the two points</p>
     </div>
 
-    <div class="locationField" id="enter2">
-      <input id="autocomplete2" placeholder="Enter your address"
-             onFocus="geolocate()" type="text" onchange="changeButton()"></input>
+    <div class = "Text" >
+      <h1 >Map</h1>
+      <p>Top rated meeting spots including cafes, restaurants, and bars near the midpoint appear automatically. </p>
     </div>
 
-    <div>
-      <button id="goTime" type="button" onclick="transition()">Find Midpoint</button>
+    <div class = "Text">
+      <h1>Choose</h1>
+      <p>Choose a top rated meeting spot near you, and on selection be sent to Google Maps for directions. </p>
     </div>
 
-    <div id="map" style="position: absolute"></div>
-
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVLrwa5Xh3KV1I43rvDNNfT04kmEaNG6Q&libraries=places&callback=initAutocomplete"></script>
-    <script src="js/geocoder.js"></script>
 
   </body>
 </html>

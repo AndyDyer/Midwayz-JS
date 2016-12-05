@@ -5,31 +5,16 @@
   padding: 0;
   overflow: hidden;
   background-color: white;
-  margin-bottom: 150px
+  margin-bottom: 15px;
+  box-shadow: 0 4px 2px -2px gray;
+  padding-bottom: 15px;
 }
 .top-right li {
   float:right;
 }
-a:link {
-    text-decoration: none;
-    color:currentColor;
-}
-
-a:visited {
-    text-decoration: none;
-    color:currentColor;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-a:active {
-    text-decoration: underline;
-}
 
 .top-right li a {
-  font-family: 'Abhaya Libre', serif;
+  font-family: 'Open Sans', sans-serif;
   align-content: center;
   display: block;
   color: black;
@@ -41,17 +26,64 @@ a:active {
   color: #4cc6d4;
 }
 .top-right li a:hover:not(.active) {
-    background-color: #111;
+    color: black;
 }
-footer {
-    background-color: #4cc6d4;
-    position: absolute;
-    font-family: 'Abhaya Libre', serif;
-    color: white;
-    left: 0;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    overflow:hidden;
-    z-index: 3;
+
+#map {
+  height: 100%;
+  width: 100%;
+  display: "none";
+  padding-bottom: 15px;
+}
+.Text{
+  display: inline-block;
+  float:left;
+  clear: both;
+  width:33%;
+}
+.Text h1{
+  font-family: 'Open Sans', sans-serif;
+  align-content: center;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  color: black;
+  z-index: 41;
+  width: 344px;
+  min-height: 75px;
+  border-style: solid;
+  border-color: #000000;
+  background-color: transparent;
+  line-height: 86px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  border-width: 0px 0px 2px;
+  margin: auto;
+}
+
+.Text p{
+  font-family: 'Open Sans', sans-serif;
+  align-content: center;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  width: 300px;
+  margin: auto;
+  padding-bottom: 100px
+}
+
+#filltext{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
 }
