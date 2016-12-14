@@ -180,7 +180,7 @@ function initMap() {
     // Browser doesn't support Geolocation
     handleLocationError(false, infoWindow, map.getCenter());
   }
-  map.addListener('idle', performSearch);
+  //map.addListener('idle', performSearch);
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
